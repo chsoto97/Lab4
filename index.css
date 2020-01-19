@@ -1,0 +1,11 @@
+li {
+	list-style-type: none;
+	font-style: italic;
+	border: 1px solid #555;
+	padding: 5px;
+	color: #555;
+}
+
+li > button {
+	margin: 5px;
+}
