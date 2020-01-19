@@ -13,10 +13,11 @@ function watchButtons(){
 	});
 	$(list).on("click", function(event){
 		if(event.target.className=='check'){
-			if(($(event.target).parent().css('text-decoration')).substring(0,4)=="none"){
-				$(event.target).parent().css('text-decoration',"line-through");
+			console.log($(event.target).parent().css('text-decoration-line'));
+			if(($(event.target).parent().css('text-decoration-line'))=="none"){
+				$(event.target).parent().css('text-decoration-line',"line-through");
 			} else {
-				$(event.target).parent().css('text-decoration',"none");
+				$(event.target).parent().css('text-decoration-line',"none");
 			}
 		}
 		if(event.target.className=='delete'){

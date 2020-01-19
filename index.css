@@ -4,6 +4,7 @@ li {
 	border: 1px solid #555;
 	padding: 5px;
 	color: #555;
+	text-decoration: none;
 }
 
 li > button {
