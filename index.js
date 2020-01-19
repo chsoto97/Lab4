@@ -5,7 +5,7 @@ function watchButtons(){
 	let ctr = 0;
 	$(smtbtn).on("click", function(event){
 		event.preventDefault();
-		if(itemText.val()==""){
+		if(itemText.val()!==""){
 			$(list).append('<li id=item'+ctr+'>'+itemText.val()+'<br><button class="check">Check</button><button class="delete">Delete</button></li>');
 			ctr++;
 			itemText.val("");
